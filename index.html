@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Gokul.Help</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gokul<span class="highlight">.Help</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to My Digital Space</h2>
+            <p>Building innovative solutions and sharing knowledge</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a tech enthusiast passionate about web development, cybersecurity, and open-source projects. This website serves as my portfolio and knowledge base.</p>
+            <div class="skills">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security Research</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-github"></i>
+                    <h3>Open Source</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section dark">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies.</p>
+                </div>
+                <div class="service">
+                    <h3>Security Consulting</h3>
+                    <p>Penetration testing and security assessments for your applications.</p>
+                </div>
+                <div class="service">
+                    <h3>GitHub Automation</h3>
+                    <p>CI/CD pipelines and workflow automation for your repositories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:youremail@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Gokul.Help. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
