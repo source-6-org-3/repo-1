@@ -1,0 +1,25 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Change this if your site is on a different branch
+
+jobs:
+  deploy:
+    runs-on: self-hosted  # This will use your Windows runner
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: .  # Change if your site files (index.html, style.css, app.js) are in a subfolder
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
